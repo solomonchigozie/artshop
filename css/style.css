@@ -1,0 +1,110 @@
+*{
+    margin : 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+html, body{
+    font-family: arial;
+    background: whitesmoke;
+}
+.menu{
+    display: flex;
+    padding: 30px 20px;
+    justify-content: space-between;
+    /* background: gray; */
+    box-shadow: 2px 3px #e1e1e1;
+}
+.left a{
+    color: orange;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 30px;
+}
+.right a{
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 40px;
+}
+/* when you put your mouse on the link  */
+.right a:hover{
+    color : orange;
+    transition: .3s ease-in;
+    border-bottom: 2px solid orange;
+}
+.row{
+    display: flex;
+    justify-content: center;
+}
+.col{
+    margin: 10px;
+    box-shadow: 4px 5px 3px gray;
+    padding: 20px 20px 40px 20px;
+    width: 400px;
+    border-radius: 15px;
+}
+.col img{
+    width : 100%;
+}
+.footer{
+    background: black;
+    color: white;
+    margin:40px  0 0 0;
+}
+.footer p{
+    padding: 30px;
+    text-align: center;
+    font-size: 24px;
+}
+.col-p2{
+    margin: 20px 0;
+    text-align: center;
+}
+.col-p2 a{
+    color: white;
+    background:orange;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid orange;
+}
+.col-p2 a:hover{
+    background :#fff;
+    color : orange;
+    border: 1px solid orange;
+    transition: .2s ease-in;
+}
+.chat-us{
+    position: fixed;
+    top: 60%;
+    right: 0;
+    width: 100px;
+    z-index: 1000;
+}
+
+.menu-icon{
+    display: none;
+}
+
+/* responsive designs  */
+@media(max-width:786px){
+    .row{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .col{
+        width : 500px;
+    }
+
+    .right a{
+        display: none;
+    }
+    .menu-icon{
+        display: block;
+    }
+    .menu-icon-1{
+        font-size: 35px;
+    }
+}
